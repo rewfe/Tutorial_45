@@ -11,7 +11,15 @@
 @interface ViewController ()
 /*! @brief This property knows my name. */
 @property (nonatomic, strong) NSString *myName;
-
+/*!
+ This method returns the current temperature in the selected city, expressed in either Fahrenheit or Celsious degrees.
+ 
+ @param  targetCityName  The city that the temperature will be returned for.
+ @param  preferredScale  Fahrenheit or Celsius.
+ 
+ @return float   The current temperature of the city.
+ */
+-(float)showCurrentTemperatureInCity:(NSString *)targetCityName showInScale:(NSString *)preferredScale;
 
 @end
 
